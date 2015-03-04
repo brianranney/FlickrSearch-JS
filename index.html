@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Flickr Gallery Creator</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/style.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+        <script id="headScript"></script>
+        
+    </head>
+    
+    <body>
+        
+        <a href="index.html" id="homeLink" class="home"><h2>Redo Search</h2></a>
+        <a href="index.html"><h1>Flickr Gallery Creator</h1></a>
+
+        <div class="resultHeader">
+            <input type="text" class="searchBar" id="userInput" placeholder="Search Flickr"><br>
+            <button id="submit" class="whiteButton" type="button">Submit</button>
+        </div>
+        
+        <div id="resultWrap" class="resultWrap">
+        
+        <div id="thumbContainer" class="resultsContainer">
+            <button id="backToResults" class="backToResults">Back to Results</button> 
+        </div>
+        
+        <div id="results" class="resultsContainer">
+        <p id="resultsText" class="instructions">Select the images you want to put in the gallery then click "Show Gallery" below.</p>
+        </div>
+        
+        <div class="resultsContainer">
+            <button id="showGallery" class="blackButton">Show Gallery</button> 
+        </div>
+            
+        </div>
+
+        <script type="text/javascript" src="/imageSelector.js"></script>
+        <script type="text/javascript" src="/showGallery.js"></script>
+        <script type="text/javascript" src="/flickr.js"></script>
+        <script type="text/javascript" src="/backToResults.js"></script>
+    
+    </body>
+</html>
